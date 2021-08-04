@@ -358,30 +358,59 @@
 			<div class="slider">
 				<button class="btn left" onclick="plusDivs(-1)">&lang;</button>
 				<button class="btn right" onclick="plusDivs(+1)">&rang;</button>
-				<div class="caption-wraper">
-					<div class="caption">
-						<div class="caption1">EnJoy <span>Your</span> Holiday</div>
-						<div class="caption2">With Out <span>Agency</span></div>
-						<ul class="caption-items">
-							<li class="caption-item">
-								<i class="fas fa-star"></i>
-								<p>SPECTACULAR THINGS TO DO<br />BEST PLACES TO SEE</p>
-							</li>
-							<li class="caption-item">
-								<i class="fas fa-star"></i>
-								<p>LOCALS GUIDE AVAILABLE</p>
-							</li>
-							<li class="caption-item">
-								<i class="fas fa-star"></i>
-								<p>ALL INCLUSIVE FAMILY HOLIDAY<br />FOR ALL SEASON</p>
-							</li>
-						</ul>
-						<div class="btn-wraper">
-							<button class="btn btn--size-l buy-btn">BUY THE TOUR</button>
+				<div class="slider-item">
+					<div class="caption-wraper">
+						<div class="caption">
+							<div class="caption1">EnJoy <span>Your</span> Holiday</div>
+							<div class="caption2">With Out <span>Agency</span></div>
+							<ul class="caption-items">
+								<li class="caption-item">
+									<i class="fas fa-star"></i>
+									<p>SPECTACULAR THINGS TO DO<br />BEST PLACES TO SEE</p>
+								</li>
+								<li class="caption-item">
+									<i class="fas fa-star"></i>
+									<p>LOCALS GUIDE AVAILABLE</p>
+								</li>
+								<li class="caption-item">
+									<i class="fas fa-star"></i>
+									<p>ALL INCLUSIVE FAMILY HOLIDAY<br />FOR ALL SEASON</p>
+								</li>
+							</ul>
+							<div class="btn-wraper">
+								<button class="btn btn--size-l buy-btn">BUY THE TOUR</button>
+							</div>
 						</div>
-					</div>
 
-					<button class="btn btn--size-s buy-btn-mt">BUY THE TOUR</button>
+						<button class="btn btn--size-s buy-btn-mt">BUY THE TOUR</button>
+					</div>
+				</div>
+				<div class="slider-item">
+					<div class="caption-wraper">
+						<div class="caption">
+							<div class="caption1">EnJoy <span>Your</span> Holiday</div>
+							<div class="caption2">With Out <span>Agency</span></div>
+							<ul class="caption-items">
+								<li class="caption-item">
+									<i class="fas fa-star"></i>
+									<p>SPECTACULAR THINGS TO DO<br />BEST PLACES TO SEE</p>
+								</li>
+								<li class="caption-item">
+									<i class="fas fa-star"></i>
+									<p>LOCALS GUIDE AVAILABLE</p>
+								</li>
+								<li class="caption-item">
+									<i class="fas fa-star"></i>
+									<p>ALL INCLUSIVE FAMILY HOLIDAY<br />FOR ALL SEASON</p>
+								</li>
+							</ul>
+							<div class="btn-wraper">
+								<button class="btn btn--size-l buy-btn">BUY THE TOUR</button>
+							</div>
+						</div>
+
+						<button class="btn btn--size-s buy-btn-mt">BUY THE TOUR</button>
+					</div>
 				</div>
 			</div>
 			<div class="content">
@@ -811,30 +840,30 @@
 		</div>
 
 		<script>
-			// var slideIndex = 1;
-			// showDivs(slideIndex);
+			var slideIndex = 1;
+			showDivs(slideIndex);
 
-			// function plusDivs(n) {
-			// 	showDivs((slideIndex += n));
-			// }
+			function plusDivs(n) {
+				showDivs((slideIndex += n));
+			}
 
-			// function showDivs(n) {
-			// 	var i;
-			// 	var x = document.querySelectorAll(".mySlides");
-			// 	if (n > x.length) {
-			// 		slideIndex = 1;
-			// 	}
-			// 	if (n < 1) {
-			// 		slideIndex = x.length;
-			// 	}
-			// 	for (i = 0; i < x.length; i++) {
-			// 		x[i].style.display = "none";
-			// 	}
-			// 	x[slideIndex - 1].style.display = "block";
-			// }
-			// setInterval(() => {
-			// 	plusDivs(+1);
-			// }, 3000);
+			function showDivs(n) {
+				var i;
+				var x = document.querySelectorAll(".slider-item");
+				if (n > x.length) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = x.length;
+				}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex - 1].style.display = "block";
+			}
+			setInterval(() => {
+				plusDivs(+1);
+			}, 5000);
 
 			// hide and show nav-mobile
 			var navbarBtn = document.querySelector(".navbar-btn");
