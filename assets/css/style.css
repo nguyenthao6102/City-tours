@@ -174,7 +174,7 @@ a {
 }
 
 .btn--size-m {
-	padding: 15px 35px;
+	padding: 15px 26px;
 	font-size: 14px;
 	line-height: 14px;
 	letter-spacing: 1px;
@@ -587,6 +587,7 @@ a {
 
 .intro.grid.wide {
 	margin-bottom: 80px;
+	position: relative;
 }
 
 .intro-left {
@@ -641,7 +642,6 @@ a {
 }
 
 .intro-right {
-	position: relative;
 	padding: 0;
 }
 
@@ -667,7 +667,7 @@ a {
 	display: flex;
 	position: absolute;
 	bottom: 40px;
-	right: 70%;
+	left: -15px;
 }
 
 .package-item-wrapper {
@@ -1026,6 +1026,9 @@ a {
 
 /* PC */
 @media (min-width: 64em) {
+	.service-item {
+		padding-left: 70px !important;
+	}
 }
 
 /* Tablet */
